@@ -2,7 +2,8 @@
 
 I'm a graduate student finishing my master's indata science, and these 
 are the projects I've built so far: a churn model with a live
-dashboard, an image classifier, a text classifier, and a BI data model. I
+dashboard, an image classifier, a text classifier, a BI data model, and a
+product analytics engagement tracker. I
 chose each one because it mirrors a real business problem I either saw
 first-hand or utilized in my course study.
 
@@ -15,6 +16,7 @@ first-hand or utilized in my course study.
 | 2 | [Plant Seedling Vision — CNN Species Classifier](02_plant_seedling_vision/) | TensorFlow/Keras, MobileNetV2 | 80.7% test accuracy, 12 classes |
 | 3 | [NLP Sentiment Analysis — Bidirectional LSTM](03_nlp_sentiment_analysis/) | TensorFlow/Keras, word embeddings | 87.9% test accuracy on IMDb |
 | 4 | [Aviation Logistics BI — Star Schema & DAX](04_aviation_logistics_bi/) | Python, pandas, Power BI DAX | 4-table star schema from 10k BTS flights |
+| 5 | [Wearable Engagement & Cohort Tracker](05_wearable_engagement_cohorts/) | Python, pandas, Kaggle (FitBit), Streamlit, Plotly | DAU 35 users, 60% Day-30 retention cohorts |
 
 ## Live Demo
 

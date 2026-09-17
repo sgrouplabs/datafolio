@@ -23,3 +23,4 @@ __pycache__/
 
 03_nlp_sentiment_analysis/results/imdb_padded.npz
 04_aviation_logistics_bi/data/raw/
+05_wearable_engagement_cohorts/data/raw/
