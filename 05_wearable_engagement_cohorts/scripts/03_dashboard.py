@@ -18,6 +18,9 @@ import streamlit as st
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(PROJECT_ROOT, "data", "processed")
+# stlite (WebAssembly) mounts files at the VFS root — fall back to relative paths
+if not os.path.isdir(OUT):
+    OUT = os.path.join("data", "processed")
 
 st.set_page_config(page_title="Wearable Engagement & Cohorts", layout="wide")
 

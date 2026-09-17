@@ -1,5 +1,7 @@
 # 05 · Wearable Engagement & Cohort Tracker 📊
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Streamlit%20WASM-brightgreen)](https://sgrouplabs.github.io/datafolio/wearables/)
+
 A **product analytics** project built on the FitBit Fitness Tracker dataset (Mobius, Kaggle): raw timestamped wearable telemetry is transformed into the KPIs a Product Analyst actually works with — Daily Active Users (DAU), retention cohorts, and feature engagement.
 
 ## What this dashboard answers
