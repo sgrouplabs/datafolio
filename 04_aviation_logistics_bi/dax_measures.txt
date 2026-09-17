@@ -1,0 +1,159 @@
+-- ============================================================================
+-- Aviation Logistics BI — DAX Measures
+-- Target: Power BI Desktop, Fact_Flights related to Dim_Date (date_key),
+-- Dim_Airline (airline_key), Dim_Airport (origin_key, dest_key, both active
+-- or one inactive via USERELATIONSHIP — see notes at the bottom).
+-- ============================================================================
+
+-- ---------------------------------------------------------------------------
+-- Core volume measures
+-- ---------------------------------------------------------------------------
+
+Total Flights =
+    COUNTROWS ( Fact_Flights )
+
+Total Cancelled Flights =
+    CALCULATE (
+        COUNTROWS ( Fact_Flights ),
+        Fact_Flights[cancelled] = 1
+    )
+
+Total Diverted Flights =
+    CALCULATE (
+        COUNTROWS ( Fact_Flights ),
+        Fact_Flights[diverted] = 1
+    )
+
+Total Flight Miles =
+    SUM ( Fact_Flights[distance] )
+
+Total Air Time (Hours) =
+    DIVIDE ( SUM ( Fact_Flights[air_time] ), 60 )
+
+-- ---------------------------------------------------------------------------
+-- Delay measures
+-- ---------------------------------------------------------------------------
+
+-- Blank/NaN arr_delay on cancellations is real missingness, not zero.
+-- AVERAGE ignores blanks, so cancelled flights don't drag the average down
+-- artificially — which is the behavior we want.
+Average Arrival Delay (Min) =
+    AVERAGE ( Fact_Flights[arr_delay] )
+
+Average Departure Delay (Min) =
+    AVERAGE ( Fact_Flights[dep_delay] )
+
+-- Delay minutes only accrue on flights that actually flew.
+Total Delay Minutes =
+    SUMX (
+        FILTER ( Fact_Flights, Fact_Flights[arr_delay] > 0 ),
+        Fact_Flights[arr_delay]
+    )
+
+-- Flights at least 15 minutes late is the DOT's on-time definition.
+Flights Delayed 15+ Min =
+    CALCULATE (
+        COUNTROWS ( Fact_Flights ),
+        Fact_Flights[arr_delay] >= 15
+    )
+
+-- ---------------------------------------------------------------------------
+-- Performance rates
+-- ---------------------------------------------------------------------------
+
+-- A flight counts as on time when it departed AND arrived with zero or
+-- negative delay (early counts as on time). Cancelled flights are excluded
+-- from the denominator: they are neither on time nor delayed, and keeping
+-- them in the base would understate true operational performance.
+On-Time Performance Rate (%) =
+VAR OnTimeFlights =
+    CALCULATE (
+        COUNTROWS ( Fact_Flights ),
+        Fact_Flights[cancelled] = 0,
+        Fact_Flights[dep_delay] <= 0,
+        Fact_Flights[arr_delay] <= 0
+    )
+VAR CompletedFlights =
+    CALCULATE (
+        COUNTROWS ( Fact_Flights ),
+        Fact_Flights[cancelled] = 0
+    )
+RETURN
+    DIVIDE ( OnTimeFlights, CompletedFlights, 0 )
+
+Cancellation Rate (%) =
+    DIVIDE (
+        [Total Cancelled Flights],
+        [Total Flights],
+        0
+    )
+
+Diversion Rate (%) =
+    DIVIDE (
+        [Total Diverted Flights],
+        [Total Flights],
+        0
+    )
+
+-- ---------------------------------------------------------------------------
+-- Attribution of delay causes (minutes)
+-- ---------------------------------------------------------------------------
+
+-- The BTS delay-cause columns are 0 for flights without a recorded cause,
+-- so plain SUM is correct here.
+Delay Minutes - Carrier =
+    SUM ( Fact_Flights[carrier_delay] )
+
+Delay Minutes - Weather =
+    SUM ( Fact_Flights[weather_delay] )
+
+Delay Minutes - NAS =
+    SUM ( Fact_Flights[nas_delay] )
+
+Delay Minutes - Security =
+    SUM ( Fact_Flights[security_delay] )
+
+Delay Minutes - Late Aircraft =
+    SUM ( Fact_Flights[late_aircraft_delay] )
+
+-- ---------------------------------------------------------------------------
+-- Ranked/top-N helpers for dashboard visuals
+-- ---------------------------------------------------------------------------
+
+Airline On-Time Rank =
+    RANKX (
+        ALL ( Dim_Airline[airline_name] ),
+        [On-Time Performance Rate (%)],
+        ,
+        DESC,
+        DENSE
+    )
+
+Busiest Airports (Flights) =
+    -- Use with Dim_Airport[airport_code] on a visual; counts flights where
+    -- the airport is the origin. For combined origin+destination traffic,
+    -- see the USERELATIONSHIP note below.
+    CALCULATE ( [Total Flights], USERELATIONSHIP ( Dim_Airport[airport_key], Fact_Flights[origin_key] ) )
+
+-- ---------------------------------------------------------------------------
+-- Time intelligence (requires Dim_Date marked as date table on full_date)
+-- ---------------------------------------------------------------------------
+
+Flights PY =
+    CALCULATE ( [Total Flights], SAMEPERIODLASTYEAR ( Dim_Date[full_date] ) )
+
+Avg Arrival Delay PY =
+    CALCULATE ( [Average Arrival Delay (Min)], SAMEPERIODLASTYEAR ( Dim_Date[full_date] ) )
+
+YoY On-Time Change (pp) =
+    [On-Time Performance Rate (%)]
+        - CALCULATE ( [On-Time Performance Rate (%)], SAMEPERIODLASTYEAR ( Dim_Date[full_date] ) )
+
+-- ---------------------------------------------------------------------------
+-- Modeling note
+-- ---------------------------------------------------------------------------
+-- Dim_Airport connects to Fact_Flights twice (origin and destination).
+-- Mark the origin relationship as active and the destination one as
+-- inactive; the Busiest Airports measure above switches roles on demand.
+-- For a destination-side view, write the same measure with
+-- USERELATIONSHIP ( Dim_Airport[airport_key], Fact_Flights[dest_key] ).

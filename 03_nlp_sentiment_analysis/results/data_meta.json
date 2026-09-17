@@ -1,0 +1,12 @@
+{
+  "num_words": 10000,
+  "maxlen": 250,
+  "sizes": {
+    "train": 40000,
+    "val": 5000,
+    "test": 5000
+  },
+  "train_review_len_mean": 235.0583,
+  "train_review_len_p95": 599.0,
+  "class_balance_train": 0.499275
+}

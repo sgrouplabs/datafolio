@@ -1,0 +1,313 @@
+airport_code,city,state,airport_key
+ABE,"Allentown/Bethlehem/Easton, PA",Pennsylvania,1
+ABI,"Abilene, TX",Texas,2
+ABQ,"Albuquerque, NM",New Mexico,3
+ABR,"Aberdeen, SD",South Dakota,4
+ACK,"Nantucket, MA",Massachusetts,5
+ACT,"Waco, TX",Texas,6
+ACV,"Arcata/Eureka, CA",California,7
+ACY,"Atlantic City, NJ",New Jersey,8
+ADK,"Adak Island, AK",Alaska,9
+ADQ,"Kodiak, AK",Alaska,10
+AEX,"Alexandria, LA",Louisiana,11
+AGS,"Augusta, GA",Georgia,12
+ALB,"Albany, NY",New York,13
+ALW,"Walla Walla, WA",Washington,14
+AMA,"Amarillo, TX",Texas,15
+ANC,"Anchorage, AK",Alaska,16
+ASE,"Aspen, CO",Colorado,17
+ATL,"Atlanta, GA",Georgia,18
+ATW,"Appleton, WI",Wisconsin,19
+AUS,"Austin, TX",Texas,20
+AVL,"Asheville, NC",North Carolina,21
+AVP,"Scranton/Wilkes-Barre, PA",Pennsylvania,22
+AZA,"Phoenix, AZ",Arizona,23
+AZO,"Kalamazoo, MI",Michigan,24
+BDL,"Hartford, CT",Connecticut,25
+BET,"Bethel, AK",Alaska,26
+BFF,"Scottsbluff, NE",Nebraska,27
+BFL,"Bakersfield, CA",California,28
+BGM,"Binghamton, NY",New York,29
+BGR,"Bangor, ME",Maine,30
+BHM,"Birmingham, AL",Alabama,31
+BIL,"Billings, MT",Montana,32
+BIS,"Bismarck/Mandan, ND",North Dakota,33
+BJI,"Bemidji, MN",Minnesota,34
+BLI,"Bellingham, WA",Washington,35
+BLV,"Belleville, IL",Illinois,36
+BMI,"Bloomington/Normal, IL",Illinois,37
+BNA,"Nashville, TN",Tennessee,38
+BOI,"Boise, ID",Idaho,39
+BOS,"Boston, MA",Massachusetts,40
+BPT,"Beaumont/Port Arthur, TX",Texas,41
+BQK,"Brunswick, GA",Georgia,42
+BQN,"Aguadilla, PR",Puerto Rico,43
+BRD,"Brainerd, MN",Minnesota,44
+BRO,"Brownsville, TX",Texas,45
+BRW,"Barrow, AK",Alaska,46
+BTR,"Baton Rouge, LA",Louisiana,47
+BTV,"Burlington, VT",Vermont,48
+BUF,"Buffalo, NY",New York,49
+BUR,"Burbank, CA",California,50
+BWI,"Baltimore, MD",Maryland,51
+BZN,"Bozeman, MT",Montana,52
+CAE,"Columbia, SC",South Carolina,53
+CAK,"Akron, OH",Ohio,54
+CDV,"Cordova, AK",Alaska,55
+CHA,"Chattanooga, TN",Tennessee,56
+CHO,"Charlottesville, VA",Virginia,57
+CHS,"Charleston, SC",South Carolina,58
+CID,"Cedar Rapids/Iowa City, IA",Iowa,59
+CIU,"Sault Ste. Marie, MI",Michigan,60
+CKB,"Clarksburg/Fairmont, WV",West Virginia,61
+CLE,"Cleveland, OH",Ohio,62
+CLL,"College Station/Bryan, TX",Texas,63
+CLT,"Charlotte, NC",North Carolina,64
+CMH,"Columbus, OH",Ohio,65
+CMI,"Champaign/Urbana, IL",Illinois,66
+COS,"Colorado Springs, CO",Colorado,67
+COU,"Columbia, MO",Missouri,68
+CPR,"Casper, WY",Wyoming,69
+CRP,"Corpus Christi, TX",Texas,70
+CRW,"Charleston/Dunbar, WV",West Virginia,71
+CSG,"Columbus, GA",Georgia,72
+CVG,"Cincinnati, OH",Kentucky,73
+CWA,"Mosinee, WI",Wisconsin,74
+CYS,"Cheyenne, WY",Wyoming,75
+DAB,"Daytona Beach, FL",Florida,76
+DAL,"Dallas, TX",Texas,77
+DAY,"Dayton, OH",Ohio,78
+DCA,"Washington, DC",Virginia,79
+DDC,"Dodge City, KS",Kansas,80
+DEC,"Decatur, IL",Illinois,81
+DEN,"Denver, CO",Colorado,82
+DFW,"Dallas/Fort Worth, TX",Texas,83
+DHN,"Dothan, AL",Alabama,84
+DIK,"Dickinson, ND",North Dakota,85
+DLG,"Dillingham, AK",Alaska,86
+DLH,"Duluth, MN",Minnesota,87
+DRO,"Durango, CO",Colorado,88
+DSM,"Des Moines, IA",Iowa,89
+DTW,"Detroit, MI",Michigan,90
+EAR,"Kearney, NE",Nebraska,91
+ECP,"Panama City, FL",Florida,92
+EGE,"Eagle, CO",Colorado,93
+ELM,"Elmira/Corning, NY",New York,94
+ELP,"El Paso, TX",Texas,95
+EUG,"Eugene, OR",Oregon,96
+EVV,"Evansville, IN",Indiana,97
+EWR,"Newark, NJ",New Jersey,98
+EYW,"Key West, FL",Florida,99
+FAI,"Fairbanks, AK",Alaska,100
+FAR,"Fargo, ND",North Dakota,101
+FAT,"Fresno, CA",California,102
+FAY,"Fayetteville, NC",North Carolina,103
+FCA,"Kalispell, MT",Montana,104
+FLG,"Flagstaff, AZ",Arizona,105
+FLL,"Fort Lauderdale, FL",Florida,106
+FNT,"Flint, MI",Michigan,107
+FSD,"Sioux Falls, SD",South Dakota,108
+FSM,"Fort Smith, AR",Arkansas,109
+FWA,"Fort Wayne, IN",Indiana,110
+GCC,"Gillette, WY",Wyoming,111
+GCK,"Garden City, KS",Kansas,112
+GEG,"Spokane, WA",Washington,113
+GFK,"Grand Forks, ND",North Dakota,114
+GGG,"Longview, TX",Texas,115
+GJT,"Grand Junction, CO",Colorado,116
+GNV,"Gainesville, FL",Florida,117
+GPT,"Gulfport/Biloxi, MS",Mississippi,118
+GRB,"Green Bay, WI",Wisconsin,119
+GRI,"Grand Island, NE",Nebraska,120
+GRK,"Killeen, TX",Texas,121
+GRR,"Grand Rapids, MI",Michigan,122
+GSO,"Greensboro/High Point, NC",North Carolina,123
+GSP,"Greer, SC",South Carolina,124
+GST,"Gustavus, AK",Alaska,125
+GTF,"Great Falls, MT",Montana,126
+GTR,"Columbus, MS",Mississippi,127
+GUC,"Gunnison, CO",Colorado,128
+GUM,"Guam, TT",U.S. Pacific Trust Territories and Possessions,129
+HDN,"Hayden, CO",Colorado,130
+HGR,"Hagerstown, MD",Maryland,131
+HHH,"Hilton Head, SC",South Carolina,132
+HIB,"Hibbing, MN",Minnesota,133
+HLN,"Helena, MT",Montana,134
+HNL,"Honolulu, HI",Hawaii,135
+HOU,"Houston, TX",Texas,136
+HPN,"White Plains, NY",New York,137
+HRL,"Harlingen/San Benito, TX",Texas,138
+HSV,"Huntsville, AL",Alabama,139
+HTS,"Ashland, WV",West Virginia,140
+HYS,"Hays, KS",Kansas,141
+IAD,"Washington, DC",Virginia,142
+IAH,"Houston, TX",Texas,143
+ICT,"Wichita, KS",Kansas,144
+IDA,"Idaho Falls, ID",Idaho,145
+ILM,"Wilmington, NC",North Carolina,146
+IMT,"Iron Mountain/Kingsfd, MI",Michigan,147
+IND,"Indianapolis, IN",Indiana,148
+ISP,"Islip, NY",New York,149
+ITH,"Ithaca/Cortland, NY",New York,150
+ITO,"Hilo, HI",Hawaii,151
+JAC,"Jackson, WY",Wyoming,152
+JAN,"Jackson/Vicksburg, MS",Mississippi,153
+JAX,"Jacksonville, FL",Florida,154
+JFK,"New York, NY",New York,155
+JMS,"Jamestown, ND",North Dakota,156
+JNU,"Juneau, AK",Alaska,157
+JST,"Johnstown, PA",Pennsylvania,158
+KOA,"Kona, HI",Hawaii,159
+KTN,"Ketchikan, AK",Alaska,160
+LAN,"Lansing, MI",Michigan,161
+LAR,"Laramie, WY",Wyoming,162
+LAS,"Las Vegas, NV",Nevada,163
+LAW,"Lawton/Fort Sill, OK",Oklahoma,164
+LAX,"Los Angeles, CA",California,165
+LBB,"Lubbock, TX",Texas,166
+LBE,"Latrobe, PA",Pennsylvania,167
+LBF,"North Platte, NE",Nebraska,168
+LBL,"Liberal, KS",Kansas,169
+LCH,"Lake Charles, LA",Louisiana,170
+LCK,"Columbus, OH",Ohio,171
+LEX,"Lexington, KY",Kentucky,172
+LFT,"Lafayette, LA",Louisiana,173
+LGA,"New York, NY",New York,174
+LGB,"Long Beach, CA",California,175
+LIH,"Lihue, HI",Hawaii,176
+LIT,"Little Rock, AR",Arkansas,177
+LNK,"Lincoln, NE",Nebraska,178
+LRD,"Laredo, TX",Texas,179
+LWS,"Lewiston, ID",Idaho,180
+MAF,"Midland/Odessa, TX",Texas,181
+MBS,"Saginaw/Bay City/Midland, MI",Michigan,182
+MCI,"Kansas City, MO",Missouri,183
+MCO,"Orlando, FL",Florida,184
+MDT,"Harrisburg, PA",Pennsylvania,185
+MDW,"Chicago, IL",Illinois,186
+MEI,"Meridian, MS",Mississippi,187
+MEM,"Memphis, TN",Tennessee,188
+MFE,"Mission/McAllen/Edinburg, TX",Texas,189
+MFR,"Medford, OR",Oregon,190
+MGM,"Montgomery, AL",Alabama,191
+MHK,"Manhattan/Ft. Riley, KS",Kansas,192
+MHT,"Manchester, NH",New Hampshire,193
+MIA,"Miami, FL",Florida,194
+MKE,"Milwaukee, WI",Wisconsin,195
+MLB,"Melbourne, FL",Florida,196
+MLI,"Moline, IL",Illinois,197
+MLU,"Monroe, LA",Louisiana,198
+MOB,"Mobile, AL",Alabama,199
+MOT,"Minot, ND",North Dakota,200
+MQT,"Marquette, MI",Michigan,201
+MRY,"Monterey, CA",California,202
+MSN,"Madison, WI",Wisconsin,203
+MSO,"Missoula, MT",Montana,204
+MSP,"Minneapolis, MN",Minnesota,205
+MSY,"New Orleans, LA",Louisiana,206
+MTJ,"Montrose/Delta, CO",Colorado,207
+MVY,"Martha's Vineyard, MA",Massachusetts,208
+MYR,"Myrtle Beach, SC",South Carolina,209
+OAJ,"Jacksonville/Camp Lejeune, NC",North Carolina,210
+OAK,"Oakland, CA",California,211
+OGG,"Kahului, HI",Hawaii,212
+OKC,"Oklahoma City, OK",Oklahoma,213
+OMA,"Omaha, NE",Nebraska,214
+ONT,"Ontario, CA",California,215
+ORD,"Chicago, IL",Illinois,216
+ORF,"Norfolk, VA",Virginia,217
+ORH,"Worcester, MA",Massachusetts,218
+PAE,"Everett, WA",Washington,219
+PBG,"Plattsburgh, NY",New York,220
+PBI,"West Palm Beach/Palm Beach, FL",Florida,221
+PDX,"Portland, OR",Oregon,222
+PGD,"Punta Gorda, FL",Florida,223
+PHL,"Philadelphia, PA",Pennsylvania,224
+PHX,"Phoenix, AZ",Arizona,225
+PIA,"Peoria, IL",Illinois,226
+PIE,"St. Petersburg, FL",Florida,227
+PIH,"Pocatello, ID",Idaho,228
+PIT,"Pittsburgh, PA",Pennsylvania,229
+PLN,"Pellston, MI",Michigan,230
+PNS,"Pensacola, FL",Florida,231
+PRC,"Prescott, AZ",Arizona,232
+PSC,"Pasco/Kennewick/Richland, WA",Washington,233
+PSE,"Ponce, PR",Puerto Rico,234
+PSG,"Petersburg, AK",Alaska,235
+PSM,"Portsmouth, NH",New Hampshire,236
+PSP,"Palm Springs, CA",California,237
+PVD,"Providence, RI",Rhode Island,238
+PVU,"Provo, UT",Utah,239
+PWM,"Portland, ME",Maine,240
+RAP,"Rapid City, SD",South Dakota,241
+RDD,"Redding, CA",California,242
+RDM,"Bend/Redmond, OR",Oregon,243
+RDU,"Raleigh/Durham, NC",North Carolina,244
+RFD,"Rockford, IL",Illinois,245
+RIC,"Richmond, VA",Virginia,246
+RIW,"Riverton/Lander, WY",Wyoming,247
+RKS,"Rock Springs, WY",Wyoming,248
+RNO,"Reno, NV",Nevada,249
+ROA,"Roanoke, VA",Virginia,250
+ROC,"Rochester, NY",New York,251
+ROW,"Roswell, NM",New Mexico,252
+RST,"Rochester, MN",Minnesota,253
+RSW,"Fort Myers, FL",Florida,254
+SAF,"Santa Fe, NM",New Mexico,255
+SAN,"San Diego, CA",California,256
+SAT,"San Antonio, TX",Texas,257
+SAV,"Savannah, GA",Georgia,258
+SBA,"Santa Barbara, CA",California,259
+SBN,"South Bend, IN",Indiana,260
+SBP,"San Luis Obispo, CA",California,261
+SCC,"Deadhorse, AK",Alaska,262
+SCE,"State College, PA",Pennsylvania,263
+SCK,"Stockton, CA",California,264
+SDF,"Louisville, KY",Kentucky,265
+SEA,"Seattle, WA",Washington,266
+SFB,"Sanford, FL",Florida,267
+SFO,"San Francisco, CA",California,268
+SGF,"Springfield, MO",Missouri,269
+SGU,"St. George, UT",Utah,270
+SHV,"Shreveport, LA",Louisiana,271
+SIT,"Sitka, AK",Alaska,272
+SJC,"San Jose, CA",California,273
+SJT,"San Angelo, TX",Texas,274
+SJU,"San Juan, PR",Puerto Rico,275
+SLC,"Salt Lake City, UT",Utah,276
+SLN,"Salina, KS",Kansas,277
+SMF,"Sacramento, CA",California,278
+SNA,"Santa Ana, CA",California,279
+SPI,"Springfield, IL",Illinois,280
+SPS,"Wichita Falls, TX",Texas,281
+SRQ,"Sarasota/Bradenton, FL",Florida,282
+STL,"St. Louis, MO",Missouri,283
+STS,"Santa Rosa, CA",California,284
+STT,"Charlotte Amalie, VI",U.S. Virgin Islands,285
+STX,"Christiansted, VI",U.S. Virgin Islands,286
+SUN,"Sun Valley/Hailey/Ketchum, ID",Idaho,287
+SUX,"Sioux City, IA",Iowa,288
+SWO,"Stillwater, OK",Oklahoma,289
+SYR,"Syracuse, NY",New York,290
+TLH,"Tallahassee, FL",Florida,291
+TOL,"Toledo, OH",Ohio,292
+TPA,"Tampa, FL",Florida,293
+TRI,"Bristol/Johnson City/Kingsport, TN",Tennessee,294
+TTN,"Trenton, NJ",New Jersey,295
+TUL,"Tulsa, OK",Oklahoma,296
+TUS,"Tucson, AZ",Arizona,297
+TVC,"Traverse City, MI",Michigan,298
+TWF,"Twin Falls, ID",Idaho,299
+TXK,"Texarkana, AR",Arkansas,300
+TYR,"Tyler, TX",Texas,301
+TYS,"Knoxville, TN",Tennessee,302
+USA,"Concord, NC",North Carolina,303
+VCT,"Victoria, TX",Texas,304
+VLD,"Valdosta, GA",Georgia,305
+VPS,"Valparaiso, FL",Florida,306
+WRG,"Wrangell, AK",Alaska,307
+WYS,"West Yellowstone, MT",Montana,308
+XNA,"Fayetteville, AR",Arkansas,309
+XWA,"Williston, ND",North Dakota,310
+YAK,"Yakutat, AK",Alaska,311
+YUM,"Yuma, AZ",Arizona,312

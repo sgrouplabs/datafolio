@@ -1,0 +1,18 @@
+{
+  "test_loss": 0.5579919219017029,
+  "test_accuracy": 0.8069964051246643,
+  "class_names": [
+    "Black-grass",
+    "Charlock",
+    "Cleavers",
+    "Common Chickweed",
+    "Common wheat",
+    "Fat Hen",
+    "Loose Silky-bent",
+    "Maize",
+    "Scentless Mayweed",
+    "Shepherd\u0393\u00c7\u00d6s Purse",
+    "Small-flowered Cranesbill",
+    "Sugar beet"
+  ]
+}

@@ -1,0 +1,25 @@
+# Virtualenvs
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Dataset (auto-downloaded, ~3GB source)
+02_plant_seedling_vision/data/raw/
+
+03_nlp_sentiment_analysis/results/imdb_padded.npz
+04_aviation_logistics_bi/data/raw/
