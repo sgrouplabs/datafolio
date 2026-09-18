@@ -11,8 +11,18 @@ import streamlit as st
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(BASE_DIR, "data", "processed", "tx_collision_risk.csv")
 
+# When compiled to stlite, app.py runs from /home/pyodide with the data file
+# mounted alongside it rather than in the repo's data/processed directory.
+_CANDIDATES = [
+    DATA_PATH,
+    os.path.join(os.getcwd(), "data", "processed", "tx_collision_risk.csv"),
+    os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                 "tx_collision_risk.csv"),
+]
+DATA_PATH = next((p for p in _CANDIDATES if os.path.exists(p)), DATA_PATH)
+
 st.set_page_config(page_title="TX Auto Collision Risk Matrix", layout="wide")
-st.title("🚗 Auto Collision Risk Matrix — Texas Territory Engine")
+st.title("Auto Collision Risk Matrix — Texas Territory Engine")
 st.caption(
     "P&C underwriting tool built on the Kaggle US Accidents dataset (TX subset). "
     "Supports territory risk scoring, pricing-band selection, and weather "
@@ -63,8 +73,8 @@ k3.metric("Sev 3–4 Share", f"{(sev >= 3).mean() * 100:.1f}%")
 k4.metric("Clear-weather share", f"{clear_share * 100:.1f}%")
 
 tab_map, tab_time, tab_weather, tab_city = st.tabs(
-    ["🗺️ Geospatial Risk Map", "⏰ Temporal Risk Heatmap",
-     "🌧️ Weather Multiplier Analysis", "🏙️ Territory Ranking"]
+    ["Geospatial Risk Map", "Temporal Risk Heatmap",
+     "Weather Multiplier Analysis", "Territory Ranking"]
 )
 
 with tab_map:
