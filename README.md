@@ -17,6 +17,7 @@ first-hand or utilized in my course study.
 | 3 | [NLP Sentiment Analysis — Bidirectional LSTM](03_nlp_sentiment_analysis/) | TensorFlow/Keras, word embeddings | 87.9% test accuracy on IMDb |
 | 4 | [Aviation Logistics BI — Star Schema & DAX](04_aviation_logistics_bi/) | Python, pandas, Power BI DAX | 4-table star schema from 10k BTS flights |
 | 5 | [Wearable Engagement & Cohort Tracker](05_wearable_engagement_cohorts/) — **[▶ Live Demo](https://sgrouplabs.github.io/datafolio/wearables/)** | Python, pandas, Kaggle (FitBit), Streamlit, Plotly | DAU 35 users, 60% Day-30 retention cohorts |
+| 6 | [Auto Collision Risk Matrix — TX Territory Engine](06_auto_collision_risk_matrix/) | Python, pandas, Kaggle (US Accidents), Streamlit, Plotly | 582k TX accidents scored for territory & weather risk |
 
 ## Live Demo
 
