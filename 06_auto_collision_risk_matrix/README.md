@@ -17,16 +17,6 @@ A P&C actuarial dashboard built on the [US Accidents (2016–2023)](https://www.
 | `scripts/02_process_risk_data.py` | Streams the 3GB+ CSV in 500k-row chunks (never fully in memory), keeps TX rows, engineers Hour / DayOfWeek / Month / Weather_Group features. |
 | `scripts/03_dashboard.py` | Streamlit app: geospatial severity map, temporal heatmap, weather multiplier analysis, territory ranking. |
 
-## Run it
-
-```bash
-pip install kagglehub pandas streamlit plotly
-python scripts/01_kaggle_extract.py
-python scripts/02_process_risk_data.py
-streamlit run scripts/03_dashboard.py
-```
-
-`data/raw/` and the full processed CSV are gitignored; only code and this README ship to the repo.
 
 ## Data dictionary (processed output)
 
